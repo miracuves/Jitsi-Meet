@@ -125,7 +125,7 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
 
         var serverURLString = call.argument<String>("serverURL")
         if (serverURLString == null) {
-            serverURLString = "https://meet.jit.si";
+            serverURLString = "https://host.nelmeet.net";
         }
         val serverURL = URL(serverURLString)
         Log.d(JITSI_PLUGIN_TAG, "Server URL: $serverURL, $serverURLString")
